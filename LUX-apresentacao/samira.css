@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato",sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+ }
+
+ .search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #cee6ff;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e3f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: #f0f5fb;
+}
+
+
+header{
+    width: 100%;
+    background-color: #0e1f39;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background-image: url(logo2.png);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-logo{
+       position: fixed;
+        bottom: 550px;
+        right: 100;
+        width: 400px;
+        height: 100;
+       
+        
+}
+
+.logo-redes{
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style:none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 1300px;
+    text-transform: capitalize;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 50px;
+    font-family: "Trirong", serif;
+      
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.left-container{
+    display: block;
+    margin-left: 1%;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color:#ffffff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #030b17;
+}
+
+.sub-btn{
+    background: #030b17;
+    height: 30px;
+    padding: 0 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.login-link{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.carousel-container{
+    height: 100px;
+}
+
+.carousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0,0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slide-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, black 80%, black);
+    color: #fff;
+}
+
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 80px;
+}
+
+.movie-des{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.video-card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/3 - 10px);
+    width: calc(100%/3 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+}
+
+.video-card-image,
+.card-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video{
+    position: absolute;
+}
+
+.video-card:hover .video-card-image{
+    display: none;
+}
+
+.title{
+    color: #fff;
+    opacity: 0.9;
+    padding-left: 4%;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.movies-list{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    margin: 10px 0 20px;
+    margin-top: 18%
+}
+
+.movies-lists{
+    margin-bottom: 10%
+}
+
+.card-container{
+    position: center;
+    width: 92%;
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    margin-left: 6%;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card-catalogo{
+    position: relative;
+    min-width: 150px;
+    width: 440px;
+    height: 465px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+    transition: .5s;
+    
+font-family: 'Poppins', sans-serif;
+}
+
+.card-catalogo h1{
+    color: white;
+   
+}
+
+.card-margin h1{
+    color: white;
+    margin-top: 50%;
+    
+}
+
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 370px;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+    transition: .5s;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .card-body{
+    opacity: 1;
+}
+
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+
+.image-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: #000000;
+}
+
+.image-hover:hover{
+    opacity: 0.6;
+}
+
+.image-description{
+    font-size:1.25rem;
+}
+
+.navbar .brand-logo{
+align-items: center ;
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .teste{
+    max-width: 1500px;
+    overflow-x: hidden;
+  }
+  #menu-h ul{
+    padding:0 ;
+    background-color:#073059;
+    z-index: 1;
+    }
+  
+    #menu-h ul li{
+        display: inline;
+        position: relative;
+       
+    }
+    
+    #menu-h ul li  a {
+        color: ghostwhite;
+        padding: 20px;
+        display: inline-block;
+       
+    }
+    #menu-h ul li a:hover{
+        background-color:#002e5c;
+        color:#ffffff;
+    } 
+    #menu-h ul ul {
+        display: none;
+        left: 0;
+        position: absolute;
+    }
+    #menu-h ul li:hover ul {
+        display: block;
+        float: right;
+    }
+    #menu-h ul ul li a {
+        display: block;
+    }
+  
+    .menu-img{
+        width: 50px;
+        height: 50px;
+    }
+  
+    .link-sem-linha {
+        text-decoration: none;
+      }
+  
+      .logo{
+        height: 160px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 600px;
+        top: -20px;
+      }
+  
+      .nav-items a{
+        text-decoration: none;
+        margin-left: 500px;
+        text-transform: capitalize;
+        color: #000000;
+        opacity: 0.9;
+        font-size: 50px;
+        font-family: "Trirong", serif;
+        position: absolute;
+        left: 1000px;
+        top: -20px;
+    }
+      
+    .lux{
+      height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 1250px;
+        top: -15px;
+
+
+    }

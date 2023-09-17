@@ -1,0 +1,342 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffff;
+}
+
+header {
+	background-color: #073059;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+}
+
+.teste{
+  max-width: 2000px;
+  overflow-x: hidden;
+}
+
+#menu-h ul{
+  padding:0 ;
+  background-color:#073059;
+  z-index: 1;
+  }
+  #menu-h ul li{
+      display: inline;
+      position: relative;
+     
+  }
+  
+  #menu-h ul li  a {
+      color: ghostwhite;
+      padding: 20px;
+      display: inline-block;
+      transition: background .3s;
+  }
+  #menu-h ul li a:hover{
+      background-color:#0050a0c7;
+      color:#ffffff;
+  } 
+  #menu-h ul ul {
+      display: none;
+      left: 0;
+      position: absolute;
+  }
+  #menu-h ul li:hover ul {
+      display: block;
+      float: right;
+  }
+  #menu-h ul ul li a {
+      display: block;
+  }
+
+  .menu-img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .link-sem-linha {
+      text-decoration: none;
+    }
+
+    .logo{
+      height: 150px;
+      width: 250px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 900px;
+      top: -40px;
+    }
+
+    .nav-items a{
+      text-decoration: none;
+      margin-left: 1300px;
+      text-transform: capitalize;
+      color: black;
+      opacity: 0.9;
+      font-size: 50px;
+      font-family: "Trirong", serif;
+      position: absolute;
+      left: 1000px;
+      top: -20px;
+  }
+    
+  .lux{
+    height: 150px;
+      width: 150px;
+      position: absolute;
+      left: 1700px;
+      top: -35px;
+  }
+
+.logo img {
+	display: block;
+	margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
+
+.lux {
+	margin-left: 10px;
+}
+
+main {
+	margin: 20px;
+}
+
+section {
+	padding: 20px;
+	background-color: #f9f9f9;
+}
+
+section h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+}
+
+
+  
+  .container-slider {
+    left: 50px;
+    top: 100px;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 112%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 129%;
+    height: 127%;
+    left: 58px;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+ /*texto do carro*/
+  h1{
+    color: #000000;
+    position: absolute;
+    left: 50px;
+    top: 628px;
+    font-size: 45px;
+  }
+
+  .letra_cor{
+    color: #073059;
+  }
+  
+  h2{
+    color: #555;
+    position: absolute;
+    left: 51px;
+    top: 716px;
+    font-size: 37px;
+  }
+
+  .cidade{
+    color: #555555d2;
+    position: absolute;
+    font-size: 38px;
+    left: 1000px;
+    top: 50px;
+  }
+
+  .barueri{
+    color: #000000;
+    position: absolute;
+    font-size: 24px;
+    left: 1005px;
+    top: 101px;
+  }
+
+  .ano{
+    color: #555555d2;
+    position: absolute;
+    font-size: 37px;
+    left: 1000px;
+    top: 179px;
+  }
+
+  .data{
+    color: #000000;
+    position: absolute;
+    font-size: 24px;
+    left: 1005px;
+    top: 228px;
+  }
+
+  .cor{
+    color: #555555d2;
+    position: absolute;
+    font-size: 41px;
+    left: 1300px;
+    top: 50px;
+  }
+
+  .nome_cor{
+    color: #000000;
+    position: absolute;
+    font-size: 30px;
+    left: 1300px;
+    top: 106px;
+  }
+
+  .cambio{
+    color: #555555d2;
+    position: absolute;
+    font-size: 35px;
+    left: 1300px;
+    top: 187px;
+  }
+
+  .tipo_cambio{
+    color: #000000;
+    position: absolute;
+    font-size: 25px;
+    left: 1300px;
+    top: 231px;
+  }
+
+  .itens{
+    color: #555555d2;
+    position: absolute;
+    font-size: 35px;
+    left: 1000px;
+    top: 380px;
+  }
+
+  .nome_itens{
+    color: #000000;
+    position: absolute;
+    left: 1000px;
+    top: 450px;
+    font-size: 25px;
+  }
+
+  .nome_itens2{
+    color: #000000;
+    position: absolute;
+    left: 1297px;
+    top: 463px;
+    font-size: 30px;
+  }
+
+  .descricao{
+    position: absolute;
+    top: 100px;
+  }
+
+  .ver-parcela {
+    background-color: #073059;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    position: absolute;
+    left: 500px;
+    top: 700px;
+  }
+  
+    .valor{
+      color: #555;
+      position: absolute;
+      left: 729px;
+      top: 700px;
+      font-size: 42px;
+    }
+
+    .container-slider{
+      position: relative;
+      left: 55px;
+      top: -197px;
+    }
+
+    span {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      color: #000000;
+      display: inline-block;
+      margin-right: 10px;
+   }
